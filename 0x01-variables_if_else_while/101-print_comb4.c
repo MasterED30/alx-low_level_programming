@@ -10,8 +10,8 @@ int main(void)
 
 {
 
-int n
-int m
+int n;
+int m;
 int l;
 
 
