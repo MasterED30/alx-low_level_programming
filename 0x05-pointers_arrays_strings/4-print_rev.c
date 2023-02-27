@@ -2,7 +2,7 @@
 
 /**
 * print_rev - A function that prints a string in reverse
-* follwed by a new line
+* followed by a new line
 * @s: string
 * return: 0
 */
@@ -11,34 +11,29 @@ void print_rev(char *s)
 
 {
 
-        int longi = 0;
+int reverse = 0;
 
-        int o;
+int o;
 
+while (*s != '\0')
 
-        while (*s != '\0')
+{
+reverse++;
 
-        {
+s++;
+}
 
-                longi++;
+s--;
 
-                s++;
+for (o = reverse; o > 0; o--)
 
-        }
+{
 
-        s--;
+_putchar(*s);
 
-        for (o = longi; o > 0; o--)
+s--;
+}
 
-        {
-
-                _putchar(*s);
-
-                s--;
-
-        }
-
-
-        _putchar('\n');
+_putchar('\n');
 
 }
